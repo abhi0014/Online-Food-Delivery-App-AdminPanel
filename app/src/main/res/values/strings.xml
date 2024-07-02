@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdminPanel_OnlineFoodDeliveryApp</string>
+    <string name="default_web_client_id" translatable="false">378259377805-fm75q01mf5pdvl2nm8ucdnuconilnkck.apps.googleusercontent.com</string>
+    <string name="clientId" translatable="false">378259377805-fm75q01mf5pdvl2nm8ucdnuconilnkck.apps.googleusercontent.com</string>
+</resources>
