@@ -10,9 +10,11 @@ import com.example.adminpanel_onlinefooddeliveryapp.databinding.ActivityAdminSig
 import com.example.adminpanel_onlinefooddeliveryapp.model.UserModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+
 
 class Admin_SignUp : AppCompatActivity() {
 
@@ -49,11 +51,6 @@ class Admin_SignUp : AppCompatActivity() {
             }
 
         }
-
-
-
-
-
 
 
         val locationList = arrayOf("Ratlam", "Indore", "Bhopal", "Mandsaur")
@@ -94,7 +91,10 @@ class Admin_SignUp : AppCompatActivity() {
         nameOfRestraunt = binding.restrauntName.text.toString()
          val user = UserModel(userName,nameOfRestraunt,email,password)
 
+
         val userId = FirebaseAuth.getInstance().currentUser!!.uid
         database.child("user").child(userId).setValue(user)
+        val databaseRef = database.child("user").ref
+        Log.v("User database ref ",databaseRef.toString())
     }
 }
