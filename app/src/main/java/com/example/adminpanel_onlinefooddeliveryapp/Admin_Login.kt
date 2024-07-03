@@ -38,10 +38,10 @@ class Admin_Login : AppCompatActivity() {
 
         // Check if the user is already logged in
         val currentUser = auth.currentUser
-//        if (currentUser != null) {
-//            updateUi(currentUser)
-//            return // Exit onCreate to avoid re-initializing the login UI
-//        }
+        if (currentUser != null) {
+            updateUi(currentUser)
+            return // Exit onCreate to avoid re-initializing the login UI
+        }
 
         val googleSignInOptions = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))

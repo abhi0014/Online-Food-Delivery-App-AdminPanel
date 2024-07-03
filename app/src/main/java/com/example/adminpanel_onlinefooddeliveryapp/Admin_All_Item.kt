@@ -43,7 +43,7 @@ class Admin_All_Item : AppCompatActivity() {
         foodRef.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 //                clearing existing data before populating
-                menuItems.clear()
+//                menuItems.clear()
 
 //                loop for through each food item
                 for(foodSnapShot in snapshot.children)

@@ -93,7 +93,7 @@ class Admin_SignUp : AppCompatActivity() {
 
 
         val userId = FirebaseAuth.getInstance().currentUser!!.uid
-        database.child("user").child(userId).setValue(user)
+        database.child("admin").child(userId).setValue(user)
         val databaseRef = database.child("user").ref
         Log.v("User database ref ",databaseRef.toString())
     }
