@@ -56,12 +56,13 @@
                 android:id="@+id/menu_food_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
                 android:text="$30"
                 android:textColor="@color/green"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/cardView9"
-                app:layout_constraintEnd_toEndOf="@+id/menu_food_name"
-                app:layout_constraintStart_toStartOf="@+id/menu_food_name" />
+                app:layout_constraintStart_toEndOf="@+id/cardView9" />
 
             <ImageButton
                 android:id="@+id/plusButton"
